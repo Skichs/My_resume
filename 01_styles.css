@@ -1,0 +1,28 @@
+/* 1 тип селекторов */
+body {
+    background: #ddd;
+}
+/* 2  тип: по классу */
+.Ksu 
+{
+    padding: 10 px;
+    background: orange; color: white;
+}
+/* 3 тип: по id */
+#header {
+background: grey;
+padding: 10 px;
+font-size:15px;
+}
+/* 4 тип: стилизовка определенного элемента (p, a, teg, class, id) */
+.Ksu p { 
+    font-size: 15px;
+}
+/* 5 тип: множественный селектор */
+#header, .html, .css{
+    margin-bottom: 50px;
+}
+/* 6 тип: уникальный селектор - звездочка*/
+* {  
+    что-то  для все всего документа;
+}

@@ -10,27 +10,29 @@
     <link rel="stylesheet" href="02_styles.css">
 </head>
 <body>
-      <img  class="photo" src="Foto.jpg" width="150" alt="здесь должна быть моя аватарка"/>
-      <section>   
-        <header>                                
-          <h1>Ксения Кухарь</h1>
-          <div class="card-wrapper"> 
-            <p class="my-info"> Я имею <strong>высшее экономическое</strong> образование и почти 4 года работы по своей специальности</p>
-            <br>
-            <p>Также параллельно я занимаюсь <strong>танцами</strong>, а именно <em>дэнсхоллом и тверком</em></p>
-          </div>
-        </header>
-
-        <div class="social">
+    <div class="container" >
+      <div class="info">
+        <img  class="photo" src="Foto.jpg" alt="здесь должна быть моя аватарка"/>
+          <header>                                
+            <h1>Ксения Кухарь</h1>
+            <div class="card-wrapper card_shadow"> 
+              <p class="my-info"> Я имею <strong>высшее экономическое</strong> образование и почти 4 года работы по своей специальности</p>
+              <br>
+              <p>Также параллельно я занимаюсь <strong>танцами</strong>, а именно <em>дэнсхоллом и тверком</em></p>
+            </div>
+            <div class="social card_shadow">
+              <p>
+              <h3>Список социальных сетей</h3>
+              </p>  
+              <a href="https://www.instagram.com/kukharrrr/" target="_blank">Instagram |</a>
+              <a href="https://t.me/KsuSkichA"target='_blank'>Telegram |</a>
+              <a href="https://vk.com/kukharrrr" target="_blank">Вконтакте</a>
+            </div>
+          </header>
+      </div>
+        <div class="hobbie card_shadow">
           <p>
-            <h3>Список социальных сетей</h3>
-          </p>  
-        <a href="https://www.instagram.com/kukharrrr/" target="_blank">Instagram |</a>
-        <a href="https://t.me/KsuSkichA"target='_blank'>Telegram |</a>
-        <a href="https://vk.com/kukharrrr" target="_blank">Вконтакте</a>
-        </div>
-        <div class="hobbie">
-          <p>
+          </header>
             <h2>Мои хобби</h2>
           </p>
             <ul>
@@ -45,9 +47,9 @@
               </li>
           </ul>
         </div>
-        <div class="jobs">
+        <div class="jobs card_shadow">
           <h2>Опыт работы</h2>
-            <table border="2">
+            <table class="table" border="2">
               <thead>
                   <tr>
                       <th>Название</th>
@@ -69,25 +71,31 @@
               </tbody>
             </table>
         </div>
-        <div class="connection">
+        <div class="connection card_shadow">
           <h2 class="re">Связаться со мной</h2>
-            <label for="text1">Ваше имя:</label>
-            <input class="field" type="text" text id='text1' placeholder="Введите имя">
-            <div>
-              <label for="email1">Ваш email:</label>
-              <input class="field" type="email" email id="email1" placeholder="Введите email">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="text1">Ваше имя:</label>
+                <input class="field" type="text" text id='text1' placeholder="Введите имя">
+              </div>
+
+              <div class="form-group">
+                <label for="email1">Ваш emаil:</label>
+                <input class="field" type="email" email id="email1" placeholder="Введите email">
+              </div>
             </div>
-            <div>
-              <label for="message">Ваше сообщение:</label>
-              <br/>
-              <textarea class="field" id="message" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
-            </div>
-          <div>
-          <input type="submit" value="Отправить!">
-          </div>
-        </form>
+              <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea class="field" id="message" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+              </div>
+    
+             <div>
+                <!-- <input type="submit" value="Отправить!"> -->
+                <button class="btn">Отправить</button>
+             </div>
       </div>
       </section>
+    </div>
 </body>
 </html>
 
